@@ -1,0 +1,44 @@
+[
+    {
+        "id": "0",
+        "price": "22000",
+        "name": "Wedding Meals",
+        "image": "https://i.ibb.co/GCSK7Ym/pexels-pavel-danilyuk-6405771.jpg",
+        "description": "Mauris mi aliquam mauris varius ultrices orci leo quam turpis duis sed aliquam purus, amet amet egestas vestibulum ipsum pretium."
+    },
+    {
+        "id": "1",
+        "price": "22000",
+        "name": "Corporate Events",
+        "image": "https://i.ibb.co/NjQ102G/pexels-rachel-claire-4992830.jpg",
+        "description": "Mauris mi aliquam mauris varius ultrices orci leo quam turpis duis sed aliquam purus, amet amet egestas vestibulum ipsum pretium."
+    },
+    {
+        "id": "2",
+        "price": "22000",
+        "name": "Drop Off Catering",
+        "image": "https://i.ibb.co/M81jPy2/pexels-nadi-lindsay-4880668.jpg",
+        "description": "Mauris mi aliquam mauris varius ultrices orci leo quam turpis duis sed aliquam purus, amet amet egestas vestibulum ipsum pretium."
+    },
+    {
+        "id": "3",
+        "name": "Bar Services",
+        "price": "22000",
+        "image": "https://i.ibb.co/v1ghdJx/pexels-chevanon-photography-302902.jpg",
+        "description": "Mauris mi aliquam mauris varius ultrices orci leo quam turpis duis sed aliquam purus, amet amet egestas vestibulum ipsum pretium."
+    },
+    {
+        "id": "4",
+        "name": "Express Wedding",
+        "price": "22000",
+        "image": "https://i.ibb.co/Y2c98wZ/pexels-jonathan-borba-3014860.jpg",
+        "description": "Mauris mi aliquam mauris varius ultrices orci leo quam turpis duis sed aliquam purus, amet amet egestas vestibulum ipsum pretium."
+    },
+    {
+        "id": "5",
+        "name": "Destination Wedding",
+        "image": "https://i.ibb.co/RPQK1zG/pexels-jeffry-surianto-18432404.jpg",
+        "price": "22000",
+        "description": "Mauris mi aliquam mauris varius ultrices orci leo quam turpis duis sed aliquam purus, amet amet egestas vestibulum ipsum pretium."
+    }
+]

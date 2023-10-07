@@ -10,6 +10,7 @@ import Home from './Home/Home';
 import Login from './Login/Login';
 import Register from './Register/Register';
 import ErrorPage from './ErrorPage/ErrorPage';
+import Service from './Service/Service';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
         loader: () => fetch('/cetegory.json')
+      },
+      {
+        path: "/service",
+        element: <Service></Service>
       },
       {
         path: "/login",

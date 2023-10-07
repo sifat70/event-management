@@ -1,7 +1,9 @@
+import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 
 
 const Home = () => {
+    const categories = useLoaderData()
     return (
         <>
             <Navbar></Navbar>
@@ -38,23 +40,30 @@ const Home = () => {
 
             {/* services */}
 
-            <section className="mt-7">
-                <div className="text-center">
-                    <h1 className="text-5xl font-bold">Services</h1>
-                </div>
-                <div>
-                    <div className="card w-96 bg-base-100 shadow-xl">
-                        <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
+            <div className="w-[90%] mx-auto">
+                <section className="mt-7">
+                    <div className="text-center">
+                        <h1 className="text-5xl font-bold">Services</h1>
                     </div>
-                </div>
-            </section>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+                        {
+                            categories.map(category => <div key={category.id} className="">
+                                <div className="card  bg-base-100 shadow-xl">
+                                    <figure><img className="h-72 w-full" src={category.image} alt="Shoes" /></figure>
+                                    <div className="card-body">
+                                        <h2 className="card-title">{category.name}</h2>
+                                        <p>{category.description.slice(0, 100)}</p>
+                                        <p className="font-extrabold">Price: {category.price} $</p>
+                                        <div className="card-actions justify-center">
+                                            <Link><button className="btn btn-outline btn-success">Show Details</button></Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>)
+                        }
+                    </div>
+                </section>
+            </div>
         </>
     );
 };

@@ -10,7 +10,6 @@ import Home from './Home/Home';
 import Login from './Login/Login';
 import Register from './Register/Register';
 import ErrorPage from './ErrorPage/ErrorPage';
-import Service from './Service/Service';
 import AuthProvider from './providers/AuthProvider';
 import CategoryDetails from './Service/CategoryDetails/CategoryDetails';
 import PrivateRoute from './PrivateRoutes/PrivateRoute';
@@ -29,10 +28,6 @@ const router = createBrowserRouter([
       {
         path: "/category/:id",
         element: <PrivateRoute><CategoryDetails></CategoryDetails></PrivateRoute>
-      },
-      {
-        path: "/service",
-        element: <Service></Service>
       },
       {
         path: "/login",

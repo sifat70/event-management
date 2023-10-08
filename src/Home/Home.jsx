@@ -1,11 +1,12 @@
 import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 
 const Home = () => {
     const categories = useLoaderData()
     return (
-        <>
+        <div>
             <Navbar></Navbar>
             <div className="w-[95%] mx-auto">
                 <div className="carousel w-full h-[90vh] rounded-lg">
@@ -40,12 +41,30 @@ const Home = () => {
                 </div>
             </div>
 
+
+            {/* about section */}
+
+            <div className="mt-7 w-[90%] mx-auto">
+                <h1 className="text-5xl font-bold italic  text-center tracking-wider text-green-400">About us</h1>
+
+                <div className="lg:flex md:flex mt-10">
+                    <div className="flex-1">
+                        <img src="https://i.ibb.co/v1ghdJx/pexels-chevanon-photography-302902.jpg" alt="" />
+                    </div>
+                    <div className="flex-1 ml-7 mt-16">
+                        <h1 className="text-3xl font-bold mb-4">Dreaming of the perfect wedding?</h1>
+                        <p className="text-lg mb-5">Welcome, my name is proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                        <button className="btn btn-outline btn-success">Read More</button>
+                    </div>
+                </div>
+            </div>
+
             {/* services */}
 
             <div id="service-section" className="w-[90%] mx-auto">
                 <section className="mt-7">
                     <div className="text-center">
-                        <h1 className="text-5xl font-bold">Services</h1>
+                        <h1 className="text-5xl font-bold italic text-green-400">Our Services</h1>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
                         {
@@ -66,7 +85,12 @@ const Home = () => {
                     </div>
                 </section>
             </div>
-        </>
+
+            {/* footer section */}
+            <div className="mt-10">
+                <Footer></Footer>
+            </div>
+        </div>
     );
 };
 

@@ -48,8 +48,8 @@ const Home = () => {
                 <h1 className="text-5xl font-bold italic  text-center tracking-wider text-green-400">About us</h1>
 
                 <div className="lg:flex md:flex mt-10">
-                    <div className="flex-1">
-                        <img src="https://i.ibb.co/v1ghdJx/pexels-chevanon-photography-302902.jpg" alt="" />
+                    <div className="flex-1 ">
+                        <img className="rounded-full" src="https://i.ibb.co/v1ghdJx/pexels-chevanon-photography-302902.jpg" alt="" />
                     </div>
                     <div className="flex-1 ml-7 mt-16">
                         <h1 className="text-3xl font-bold mb-4">Dreaming of the perfect wedding?</h1>
@@ -86,6 +86,16 @@ const Home = () => {
                 </section>
             </div>
 
+
+            {/* our location */}
+
+            <div className="mt-7 w-[90%] mx-auto">
+                <h1 className="text-5xl font-bold italic  text-center text-green-400">Our Location</h1>
+
+                <div>
+                    
+                </div>
+            </div>
             {/* footer section */}
             <div className="mt-10">
                 <Footer></Footer>

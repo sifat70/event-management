@@ -7,7 +7,7 @@ import { FaGoogle } from "react-icons/fa";
 
 const Login = () => {
 
-    const { signIn } = useContext(AuthContext);
+    const { signIn, signInWithGoogle } = useContext(AuthContext);
 
     const location = useLocation();
     const navigate = useNavigate()
@@ -30,6 +30,14 @@ const Login = () => {
             .catch(error => {
                 console.log(error)
             })
+    }
+
+    const handleGoogleSignIn = () => {
+        signInWithGoogle()
+            .then(result => {
+                console.log(result)
+            })
+            .catch(error => console.log(error))
     }
     return (
         <div>
@@ -63,7 +71,7 @@ const Login = () => {
 
                         <p className="text-center pb-5">Do not Have An Account ? <Link className="text-lime-600 font-bold" to="/register">Register</Link></p>
                         <div className="mt-2 mb-3 w-[80%] mx-auto">
-                            <button className="btn btn-outline btn-ghost w-full"><FaGoogle></FaGoogle>Login With Google</button>
+                            <button onClick={handleGoogleSignIn} className="btn btn-outline btn-ghost w-full"><FaGoogle></FaGoogle>Login With Google</button>
                         </div>
                     </div>
                 </div>

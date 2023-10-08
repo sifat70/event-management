@@ -1,22 +1,21 @@
-import { useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import Navbar from "../../Navbar/Navbar";
 
 
 const CategoryDetails = () => {
-    const { id } = useParams()
+    const categories = useLoaderData();
+    const { id } = useParams();
+    const category = categories.find(category => category.id === id);
+    console.log(category);
     return (
         <div>
             <Navbar></Navbar>
-            <p>category details {id}</p>
-
-            <div className="card card-side bg-base-100 shadow-xl">
-                <figure><img src="/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" /></figure>
-                <div className="card-body">
-                    <h2 className="card-title">New movie is released!</h2>
-                    <p>Click the button to watch on Jetflix app.</p>
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Watch</button>
-                    </div>
+            <div className="flex">
+                <div className="flex-1">
+                    <img src={category.image} alt="" />
+                </div>
+                <div className="flex-1">
+                    <p>{category.name}</p>
                 </div>
             </div>
         </div>

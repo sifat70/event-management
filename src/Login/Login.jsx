@@ -3,6 +3,9 @@ import Navbar from "../Navbar/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const Login = () => {
@@ -22,20 +25,22 @@ const Login = () => {
 
         signIn(email, password)
             .then(result => {
-                console.log(result.user)
-
+                toast('login successfully')
                 // navigate after login
                 navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
-                console.log(error)
+                toast('something went wrong')
             })
     }
+
 
     const handleGoogleSignIn = () => {
         signInWithGoogle()
             .then(result => {
                 console.log(result)
+                // navigate after login
+                navigate(location?.state ? location.state : '/')
             })
             .catch(error => console.log(error))
     }
@@ -67,6 +72,7 @@ const Login = () => {
                             <div className="form-control mt-6">
                                 <button className="btn btn-outline btn-secondary">Login</button>
                             </div>
+                            
                         </form>
 
                         <p className="text-center pb-5">Do not Have An Account ? <Link className="text-lime-600 font-bold" to="/register">Register</Link></p>

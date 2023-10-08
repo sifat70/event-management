@@ -27,7 +27,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/category/:id",
-        element: <PrivateRoute><CategoryDetails></CategoryDetails></PrivateRoute>
+        element: <PrivateRoute><CategoryDetails></CategoryDetails></PrivateRoute>,
+        loader: () => fetch('/cetegory.json')
       },
       {
         path: "/login",

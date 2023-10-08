@@ -57,7 +57,7 @@ const Home = () => {
                                         <p>{category.description.slice(0, 100)}</p>
                                         <p className="font-extrabold">Price: {category.price} $</p>
                                         <div className="card-actions justify-center">
-                                            <Link><button className="btn btn-success">Show Details</button></Link>
+                                            <Link to={`/category/${category.id}`}><button className="btn btn-outline btn-success">Show Details</button></Link>
                                         </div>
                                     </div>
                                 </div>

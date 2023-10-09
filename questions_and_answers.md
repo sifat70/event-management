@@ -19,7 +19,7 @@ console.log(greetign);
 <p>
 
 #### Answer: ?
-
+<p>Correct Answer  A</p>
 <p>Here, a variable named greeting is declared using the let keyword. This means that you've created a variable in JavaScript called greeting, but it doesn't have a value yet.</p>
 
 </p>
@@ -45,7 +45,8 @@ sum(1, "2");
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>correct answer  C</i>
+<p>Here, a function named sum is defined, which takes two parameters, a and b. Inside the function, the values of a and b are added using the + operator, and the result is returned.</p>
 
 </p>
 </details>
@@ -71,7 +72,8 @@ console.log(food);
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>correct answer  A </i>
+<p>The reason the modification of info.favoriteFood does not affect the food array is that you are changing the value of the favoriteFood property inside the info object, not modifying the original array elements. Changing the property inside the object does not impact the original array's values.</p>
 
 </p>
 </details>
@@ -96,7 +98,8 @@ console.log(sayHi());
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>correct answer  B</i>
+<p>The parentheses () after the function name indicate that the function is being called. However, in this case, you're not passing any value inside the parentheses. The function sayHi expects a name parameter, but you're not providing one when calling the function.</p>
 
 </p>
 </details>
@@ -124,7 +127,8 @@ console.log(count);
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>correct answer  C</i>
+<p>ontaining four integers: [0, 1, 2, 3]. The forEach method is used to iterate through the elements of the nums array. For each element, if the element is truthy (in JavaScript, all numbers except 0 are truthy), count is incremented by 1. Finally, the value </p>
 
 </p>
 </details>

@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -25,6 +25,14 @@ const Register = () => {
         const password = form.get('password');
         console.log(name, email, password);
 
+        if (password.length < 6) {
+            toast("password should be at least 6 characters or longer");
+            return;
+        } else if (!/[A-Z]/.test(password)) {
+            toast('Your password should have at least one upper case characters')
+            return;
+        }
+
 
         // create user
 
@@ -34,7 +42,7 @@ const Register = () => {
                 navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
-                toast('something went wrong')
+                toast(error.message)
             })
 
     }

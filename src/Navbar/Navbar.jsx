@@ -18,8 +18,8 @@ const Navbar = () => {
 
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/service">Services</NavLink></li>
-        <li><NavLink to="/contact">Programme</NavLink></li>
+        <li><NavLink to="/programme">Programme</NavLink></li>
+        <li><NavLink to="/login">Login</NavLink></li>
     </>
     return (
         <div className="w-[90%] mx-auto">
@@ -46,7 +46,7 @@ const Navbar = () => {
                             <div className="w-10 rounded-full">
                                 {
                                     user ?
-                                    <img src="" />
+                                    <img src="https://api.brusselstimes.com/wp-content/uploads/2019/05/vddriessche-c-stamp-media.jpg" />
                                     :
                                     <img src={userDefaultPic} />
                                 }

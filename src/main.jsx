@@ -13,6 +13,8 @@ import ErrorPage from './ErrorPage/ErrorPage';
 import AuthProvider from './providers/AuthProvider';
 import CategoryDetails from './Service/CategoryDetails/CategoryDetails';
 import PrivateRoute from './PrivateRoutes/PrivateRoute';
+import About from './About/About';
+import Programme from './Programme/Programme';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
         path: "/category/:id",
         element: <PrivateRoute><CategoryDetails></CategoryDetails></PrivateRoute>,
         loader: () => fetch('/cetegory.json')
+      },
+      {
+        path: "/about",
+        element: <About></About>
+      },
+      {
+        path: "/programme",
+        element: <Programme></Programme>
       },
       {
         path: "/login",

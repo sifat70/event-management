@@ -10,12 +10,18 @@ const CategoryDetails = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="flex">
-                <div className="flex-1">
-                    <img src={category.image} alt="" />
-                </div>
-                <div className="flex-1">
-                    <p>{category.name}</p>
+            <div className="w-[90%] mt-10 mx-auto">
+                <div className="card card-side bg-base-100 shadow-xl lg:grid lg:grid-cols-1 flex flex-wrap">
+                    
+                        <figure><img className="h-96 lg:w-[500px]" src={category.image} alt="Movie" /></figure>
+                    
+                    <div className="card-body mt-7">
+                        <h2 className="card-title">{category.name}</h2>
+                        <p>{category.description}</p>
+                        <div className="card-actions justify-end">
+                            <button className="btn btn-outline btn-success">confirm</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

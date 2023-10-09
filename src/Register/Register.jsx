@@ -1,13 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const Register = () => {
 
 
-    const {createUser} = useContext(AuthContext);
+    const { createUser } = useContext(AuthContext);
+
+    const location = useLocation();
+    const navigate = useNavigate()
 
     const handleRegister = e => {
         e.preventDefault();
@@ -17,16 +23,19 @@ const Register = () => {
         const name = form.get('name');
         const email = form.get('email');
         const password = form.get('password');
-        console.log(name,email,password);
+        console.log(name, email, password);
 
 
         // create user
 
         createUser(email, password)
-        .then(result =>{
-            console.log(result.user)
-        })
-        .catch(error => console.log(error))
+            .then(result => {
+                toast("User created successfully")
+                navigate(location?.state ? location.state : '/')
+            })
+            .catch(error => {
+                toast('something went wrong')
+            })
 
     }
     return (

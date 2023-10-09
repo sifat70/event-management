@@ -1,44 +1,44 @@
 [
     {
         "id": "0",
-        "price": "22000",
+        "price": "420",
         "name": "Wedding Meals",
         "image": "https://i.ibb.co/GCSK7Ym/pexels-pavel-danilyuk-6405771.jpg",
-        "description": "Mauris mi aliquam mauris varius ultrices orci leo quam turpis duis sed aliquam purus, amet amet egestas vestibulum ipsum pretium."
+        "description": "A traditional wedding reception menu includes a three-course to four-course plated meal where all guests sit around a table or several tables in a formal setting. This provides an opportunity for decorating the table and providing an extra element of delight for you and your guests."
     },
     {
         "id": "1",
-        "price": "22000",
+        "price": "650",
         "name": "Corporate Events",
         "image": "https://i.ibb.co/NjQ102G/pexels-rachel-claire-4992830.jpg",
-        "description": "Mauris mi aliquam mauris varius ultrices orci leo quam turpis duis sed aliquam purus, amet amet egestas vestibulum ipsum pretium."
+        "description": "The common types of corporate events are Trade Show Expos, Gala Dinners, Conferences & Seminars, Networking, Presentations, Awards Ceremony, Summits and end of year Corporate Party."
     },
     {
         "id": "2",
-        "price": "22000",
+        "price": "220",
         "name": "Drop Off Catering",
         "image": "https://i.ibb.co/M81jPy2/pexels-nadi-lindsay-4880668.jpg",
-        "description": "Mauris mi aliquam mauris varius ultrices orci leo quam turpis duis sed aliquam purus, amet amet egestas vestibulum ipsum pretium."
+        "description": "Drop-off catering is a service where prepared meals are delivered to a specific location. It differs from traditional catering because it doesn't require servers or setup at the event."
     },
     {
         "id": "3",
         "name": "Bar Services",
-        "price": "22000",
+        "price": "350",
         "image": "https://i.ibb.co/v1ghdJx/pexels-chevanon-photography-302902.jpg",
-        "description": "Mauris mi aliquam mauris varius ultrices orci leo quam turpis duis sed aliquam purus, amet amet egestas vestibulum ipsum pretium."
+        "description": "Bar Service means the service of alcohol, liquor and such other beverages by the LCDA, as offered to the Client pursuant to the LCDA's Liquor License(s), and in compliance with the Nova Scotia Liquor Control Act."
     },
     {
         "id": "4",
         "name": "Express Wedding",
-        "price": "22000",
+        "price": "150",
         "image": "https://i.ibb.co/Y2c98wZ/pexels-jonathan-borba-3014860.jpg",
-        "description": "Mauris mi aliquam mauris varius ultrices orci leo quam turpis duis sed aliquam purus, amet amet egestas vestibulum ipsum pretium."
+        "description": "Introduction. A blush bride wedding dress is a unique and romantic choice for brides who want to infuse softness and femininity into their bridal look. Blush, a pale pink hue, adds a subtle touch of color to the traditional white or ivory wedding dress."
     },
     {
         "id": "5",
         "name": "Destination Wedding",
         "image": "https://i.ibb.co/RPQK1zG/pexels-jeffry-surianto-18432404.jpg",
-        "price": "22000",
-        "description": "Mauris mi aliquam mauris varius ultrices orci leo quam turpis duis sed aliquam purus, amet amet egestas vestibulum ipsum pretium."
+        "price": "900",
+        "description": "A destination wedding takes place in a location away from a couple's hometown. Planning a destination wedding could be less expensive than planning a traditional wedding if it entails a smaller guest list or smaller reception."
     }
 ]

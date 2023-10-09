@@ -19,7 +19,7 @@ const Navbar = () => {
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
         <li><NavLink to="/service">Services</NavLink></li>
-        <li><NavLink to="/contact">Contact</NavLink></li>
+        <li><NavLink to="/contact">Programme</NavLink></li>
     </>
     return (
         <div className="w-[90%] mx-auto">
@@ -33,7 +33,7 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">DaisyUI</a>
+                    <a className="btn btn-ghost normal-case text-xl"><img className="h-full w-full" src="https://i.ibb.co/RjY8rPj/Batman-Logo.png" alt="" /></a>
                 </div> {/* <img className="h-full w-[100px]" src="https://i.ibb.co/tChXtyd/46601258-vector-wedding-logo-design-template-marriage-couple-ceremony-symbol.jpg" alt="" /> */}
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
